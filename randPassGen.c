@@ -35,6 +35,11 @@ int main(int argc, char *argv[])
         printf("Usage: ./randPassGen [Length]\n\tLength should be a multiple of 4.\n");
         return 1;
     }
+    if (atoi(argv[1]) == 0)
+    {
+        printf("Usage: ./randPassGen [Length]\n\tLength should be a multiple of 4.\nLength Should Be and Integer.\n");
+        return 1;
+    }
     /* **************************************************************************************** */
 
     int digits = 0;
